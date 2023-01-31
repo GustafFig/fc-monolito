@@ -52,4 +52,28 @@ export default class Address implements ValueObject {
   toString() {
     return `${this._street}, ${this._number} ${this._complement}, ${this._state} ${this._city} ${this._zipCode}`;
   }
+
+  get street() {
+    return this._street;
+  }
+
+  get number() {
+    return this._number;
+  }
+
+  get complement() {
+    return this._complement;
+  }
+
+  get city() {
+    return this._city;
+  }
+
+  get state() {
+    return this._state;
+  }
+
+  get zipCode() {
+    return this._zipCode;
+  }
 }

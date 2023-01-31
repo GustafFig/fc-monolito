@@ -44,4 +44,24 @@ export default class Invoice extends BaseEntity implements AggregateRoot {
       throw Error('Items must have at least 1 item')
     }
   }
+
+  get name() {
+    return this._name;
+  }
+
+  get document() {
+    return this._document;
+  }
+
+  get address() {
+    return this._address;
+  }
+
+  get items() {
+    return this._items;
+  }
+
+  get total() {
+    return this._items.reduce((acc, item) => item.price + acc, 0);
+  }
 }

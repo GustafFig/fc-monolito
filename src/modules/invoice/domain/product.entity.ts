@@ -30,4 +30,12 @@ export default class Product extends BaseEntity {
       throw new Error("Price must be bigger than 0");
     }
   }
+
+  get name() {
+    return this._name;
+  }
+
+  get price() {
+    return this._price;
+  }
 }
