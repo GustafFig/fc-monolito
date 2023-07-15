@@ -14,7 +14,8 @@
   },
   "scripts": {
     "test": "npm run tsc -- --noEmit && jest",
-    "tsc": "tsc"
+    "tsc": "tsc",
+    "test:dev": "jest"
   },
   "dependencies": {
     "@types/express": "^4.17.13",
