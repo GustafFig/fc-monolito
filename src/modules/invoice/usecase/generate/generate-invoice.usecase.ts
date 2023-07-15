@@ -41,7 +41,6 @@ export default class FindInvoiceUseCase {
       await this._invoiceRepository.add(invoice);
     } catch (err) {
       // logic to save this error
-      console.error(err);
       throw Error("Unexpected Error");
     }
 
